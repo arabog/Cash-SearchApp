@@ -13,13 +13,8 @@ const Notification = ( { bal } ) => {
 
 
           return (
-                    <div
-                              className= {
-                                        `notification 
-                                        
-                                        ${notification ? 'visible' : 'hidden'}`
-                              }
-                    >
+                    // `${notification ? 'visible' : 'hidden'}` : passing css classes into js ternary operator
+                    <div className= { `notify is-danger ${notification ? 'visible' : 'hidden'}`} >
                               <button onClick={() => setNotification(false)} className="delete"></button>
 
                               <p>Your account balance is very low.</p>

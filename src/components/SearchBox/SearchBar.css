@@ -1,5 +1,10 @@
+.search-app {
+          margin: 20px;
+          
+}
 .searchInputs {
           display: flex;
+          color: #fff;
 }
 
 .searchicon {

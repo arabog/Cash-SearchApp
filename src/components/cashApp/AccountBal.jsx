@@ -36,35 +36,41 @@ const AccountBal = ( {acct } ) => {
                     <div className="columns">
                               <div className="column">
                                         <div className="box">
-                                                  <h4>Your account balance:</h4>
+                                                  <h4 className="title is-4">Your account balance:</h4>
 
-                                                  <div className="amount balance">${bal}</div>
+                                                  <div className="df-box">
+                                                            <div className="amount balance">${bal}</div>
 
-                                                  <button 
-                                                            id="balance" 
-                                                            className="button"
+                                                            <button 
+                                                                      id="balance" 
+                                                                      className="button"
 
-                                                            onClick={() => handleSavings()}
-                                                  >
-                                                            Send $100
-                                                  </button>
+                                                                      onClick={() => handleSavings()}
+                                                            >
+                                                                      Send $100
+                                                            </button>
+
+                                                  </div>
                                         </div>
                               </div>
 
                               <div className="column">
                                         <div className="box">
-                                                  <h4>Your savings balance:</h4>
+                                                  <h4 className="title is-4">Your savings balance:</h4>
 
-                                                  <div className="amount balance">${savBal}</div>
+                                                  <div className="df-box">
+                                                            <div className="amount savings">${savBal}</div>
 
-                                                  <button 
-                                                            id="balance" 
-                                                            className="button"
-                                                  
-                                                            onClick={() => handleSpendings()}
-                                                  >
-                                                            Send $100
-                                                  </button>
+                                                            <button 
+                                                                      id="balance" 
+                                                                      className="button"
+
+                                                                      onClick={() => handleSpendings()}
+                                                            >
+                                                                      Send $100
+                                                            </button>
+
+                                                  </div>
                                         </div>
                               </div>
 
