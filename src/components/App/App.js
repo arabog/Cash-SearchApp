@@ -1,5 +1,7 @@
 import "./App.css"
 import AccountBal from "../cashApp/AccountBal";
+import data from "../../data.json"
+import SearchBar from "../SearchBox/SearchBar";
 
 
 function App() {
@@ -11,15 +13,26 @@ function App() {
 
 
 	return (
-		<div className="app container">
-			<div className="section">
-				<h1 className="center">
-					Welcome to the personal finance app!
-				</h1>
+		<>
+			<div className="app container">
+				<div className="section">
+					<h1 className="center">
+						Welcome to the personal finance app!
+					</h1>
+				</div>
+
+				<AccountBal  acct = {accounts} />
 			</div>
 
-			<AccountBal  acct = {accounts} />
-		</div>
+
+			<div className="search-app">
+				<SearchBar 
+					placeholder="Enter a Book Name...." 
+				
+					data={data}
+				/>
+			</div>
+		</>
 	);
 }
 
